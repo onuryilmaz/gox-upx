@@ -1,4 +1,4 @@
-FROM golang:1.12-buster
+FROM golang:1.12-stretch
 
 # upx 3.95 if broken on darin so we build from HEAD, once 3.96 is release this can be simplified
 RUN apt-get update \
