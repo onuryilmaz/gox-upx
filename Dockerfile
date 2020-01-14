@@ -1,4 +1,4 @@
-FROM golang:1.12-alpine
+FROM golang:1.13-buster
 
 # upx 3.95 if broken on darin so we build from HEAD, once 3.96 is release this can be simplified
 RUN apt-get update \
