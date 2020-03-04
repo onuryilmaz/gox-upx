@@ -1,4 +1,4 @@
-FROM golang:1.14-alpine
+FROM golang:1.14-stretch
 
 ARG UPX_VERSION "3.96"
 RUN wget https://github.com/upx/upx/releases/download/v${UPX_VERSION}/upx-${UPX_VERSION}-amd64_linux.tar.xz
