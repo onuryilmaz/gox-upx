@@ -7,7 +7,7 @@ RUN wget https://github.com/upx/upx/releases/download/v${UPX_VERSION}/upx-${UPX_
 
 RUN go get -u github.com/mitchellh/gox
 
-FROM golang:1.14-alpine
+FROM golang:1.14-buster
 
 COPY --from=build /usr/local/bin/upx /usr/local/bin/upx
 COPY --from=build /go/bin/gox /usr/local/bin/gox
