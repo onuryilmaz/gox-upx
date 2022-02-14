@@ -1,5 +1,5 @@
-ARG GOVERSION=1.16.5
-alpinARG DISTRO=alpine
+ARG GOVERSION=1.17.7
+ARG DISTRO=buster
 FROM golang:${GOVERSION}-buster as build
 
 RUN apt-get update && apt-get install xz-utils
