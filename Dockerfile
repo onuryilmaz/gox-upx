@@ -1,5 +1,5 @@
 ARG GOVERSION=1.20
-ARG DISTRO=buster
+ARG DISTRO=stretch
 FROM golang:${GOVERSION}-${DISTRO} as build
 
 RUN apt-get update && apt-get install xz-utils
